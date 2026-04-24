@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center"
+    android:background="#121212">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sleep Tracker"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        android:layout_marginBottom="30dp"
+        android:textStyle="bold"/>
+
+    <Chronometer
+        android:id="@+id/chronometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#BB86FC"
+        android:textSize="60sp"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:id="@+id/tvSleepStage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status: Awake"
+        android:textColor="#03DAC5"
+        android:textSize="20sp"
+        android:layout_marginBottom="40dp" />
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Start Tracking"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/btnStop"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Stop Tracking"
+        android:enabled="false"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/btnSetGoal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Set Bedtime Goal"
+        android:backgroundTint="#018786"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Reset All"
+        android:backgroundTint="#CF6679" />
+
+    <TextView
+        android:id="@+id/tvSummary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#AAAAAA"
+        android:layout_marginTop="30dp"
+        android:text="Avg. Sleep: 0h 0m"
+        android:textSize="16sp" />
+
+</LinearLayout>
